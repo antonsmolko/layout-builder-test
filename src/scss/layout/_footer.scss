@@ -1,0 +1,21 @@
+.tm-footer {
+    margin-top: auto;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include media-mob($md) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__social {
+        a {
+            &:not(:first-child) {
+                margin-left: $global-medium-margin;
+            }
+        }
+    }
+}

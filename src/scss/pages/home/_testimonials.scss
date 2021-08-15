@@ -1,0 +1,15 @@
+.tm-home-testimonials {
+    &__quote {
+        font-family: $base-heading-font-family;
+        line-height: 1;
+
+        .uk-icon {
+            transform: scaleX(-1);
+        }
+    }
+    &__item-footer {
+        span {
+            line-height: 1;
+        }
+    }
+}

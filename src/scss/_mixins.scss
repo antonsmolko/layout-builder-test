@@ -1,0 +1,138 @@
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal ) {
+    @font-face {
+        font-family: $font-family;
+        font-weight: $weight;
+        font-style: $style;
+        src: url('#{$file-path}.woff2') format('woff2');
+        font-display: swap;
+    }
+}
+
+@mixin object-fit($fit: fill, $position: null) {
+    -o-object-fit: $fit;
+    object-fit: $fit;
+    @if $position {
+        -o-object-position: $position;
+        object-position: $position;
+        font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+    } @else {
+        font-family: 'object-fit: #{$fit}';
+    }
+}
+
+// Media
+
+$ipad-pro-portrait-breakpoint: "(min-device-width : 834px) and (max-device-width : 1366px) and (orientation: portrait)";
+$ipad-pro-landscape-breakpoint: "(min-device-width : 834px) and (max-device-width : 1366px) and (orientation: landscape)";
+
+$ipad-portrait-breakpoint: "(min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait)";
+$ipad-landscape-breakpoint: "(min-device-width : 768px) and (max-device-width : 1024px) and (orientation: landscape)";
+
+$ipad-all-portrait-breakpoint: "(min-device-width : 768px) and (max-device-width : 1366px) and (orientation: portrait)";
+$ipad-all-landscape-breakpoint: "(min-device-width : 768px) and (max-device-width : 1366px) and (orientation: landscape)";
+
+$device-portrait-breakpoint: "(min-device-width : 320px) and (max-device-width : 1366px) and (orientation: portrait)";
+$device-landscape-breakpoint: "(min-device-width : 560px) and (max-device-width : 1366px) and (orientation: landscape)";
+
+$mobile-portrait-breakpoint: "(min-device-width : 320px) and (max-device-width : 896px) and (min-device-height : 320px) and (max-device-height : 896px) and (orientation: portrait)";
+$mobile-landscape-breakpoint: "(min-device-width : 320px) and (max-device-width : 896px) and (min-device-height : 320px) and (max-device-height : 896px) and (orientation: landscape)";
+$mobile-breakpoint: "(min-device-width : 320px) and (max-device-width : 896px) and (min-device-height : 320px) and (max-device-height : 896px)";
+
+// Responsive Mixins
+@mixin media_device($media) {
+    @if $media == ipad-pro-portrait {
+        @media only screen and #{$ipad-pro-portrait-breakpoint} { @content; }
+    }
+    @else if $media == ipad-pro-landscape {
+        @media only screen and #{$ipad-pro-landscape-breakpoint} { @content; }
+    }
+    @else if $media == ipad-portrait  {
+        @media only screen and #{$ipad-portrait-breakpoint} { @content; }
+    }
+    @else if $media == ipad-landscape {
+        @media only screen and #{$ipad-landscape-breakpoint} { @content; }
+    }
+    @else if $media == ipad-all-portrait  {
+        @media only screen and #{$ipad-all-portrait-breakpoint} { @content; }
+    }
+    @else if $media == ipad-all-landscape {
+        @media only screen and #{$ipad-all-landscape-breakpoint} { @content; }
+    }
+    @else if $media == device-portrait  {
+        @media only screen and #{$device-portrait-breakpoint} { @content; }
+    }
+    @else if $media == device-landscape {
+        @media only screen and #{$device-landscape-breakpoint} { @content; }
+    }
+    @else if $media == mobile-landscape {
+        @media only screen and #{$mobile-landscape-breakpoint} { @content; }
+    }
+    @else if $media == mobile-portrait {
+        @media only screen and #{$mobile-portrait-breakpoint} { @content; }
+    }
+    @else if $media == mobile {
+        @media only screen and #{$mobile-breakpoint} { @content; }
+    }
+    // etc
+}
+
+// Media
+@mixin media-mob($break) {
+    @media screen and (min-width: $break){
+        @content;
+    }
+}
+
+@mixin media-desk($break) {
+    @media screen and (max-width: calc(#{$break} - 1px)){
+        @content;
+    }
+}
+
+@mixin media-range($break-min, $break-max) {
+    @media screen and (min-width: $break-min) and (max-width: $break-max) {
+        @content;
+    }
+}
+
+@mixin media-mob-range($break-min, $break-max) {
+    @media screen and (min-width: $break-min) and (max-width: calc(#{$break-max} - 1px)) {
+        @content;
+    }
+}
+
+@mixin media-mob-portrait($break) {
+    @media screen and (min-width: $break) and (orientation: portrait){
+        @content;
+    }
+}
+
+@mixin media-desk-portrait($break) {
+    @media screen and (max-width: calc(#{$break} - 1px)) and (orientation: portrait){
+        @content;
+    }
+}
+
+@mixin media-portrait() {
+    @media screen and (orientation: portrait){
+        @content;
+    }
+}
+
+@mixin media-mob-landscape($break) {
+    @media screen and (min-width: $break) and (orientation: landscape){
+        @content;
+    }
+}
+
+@mixin media-desk-landscape($break) {
+    @media screen and (max-width: calc(#{$break} - 1px)) and (orientation: landscape){
+        @content;
+    }
+}
+
+@mixin media-pointer-coarse() {
+    @media(pointer: coarse){
+        @content;
+    }
+}

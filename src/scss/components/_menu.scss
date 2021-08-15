@@ -1,0 +1,32 @@
+$hamburger-width: 45px;
+$hamburger-line-height: 2px;
+$hamburger-background: $global-inverse-color;
+$hamburger-margin: $global-small-gutter;
+
+.tm-menu {
+    &__hamburger {
+        height: $hamburger-margin * 2 + $hamburger-line-height;
+        cursor: pointer;
+
+        div {
+            width: $hamburger-width;
+            height: $hamburger-line-height;
+            background-color: $hamburger-background;
+            margin-top: -$hamburger-margin * 2;
+
+            &::before, &::after {
+                content: '';
+                display: block;
+                width: $hamburger-width;
+                height: $hamburger-line-height;
+                background-color: $hamburger-background;
+            }
+
+            &::before {
+                margin-top: $hamburger-margin;
+                margin-bottom: $hamburger-margin - $hamburger-line-height;
+            }
+        }
+
+    }
+}

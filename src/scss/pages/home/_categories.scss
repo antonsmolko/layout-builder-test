@@ -1,0 +1,72 @@
+.tm-home-categories {
+    &__arrows-nav {
+        @include media-desk($sm) {
+            a.uk-slidenav {
+                color: $inverse-slidenav-color;
+            }
+            a.uk-slidenav:hover {
+                color: $inverse-slidenav-hover-color;
+            }
+            a.uk-slidenav:active {
+                color: $inverse-slidenav-active-color;
+            }
+        }
+        a.uk-slidenav-previous {
+            @include media-mob($sm) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        a.uk-slidenav-next {
+            @include media-mob($sm) {
+                margin-right: 0;
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__bottom-nav {
+        margin-bottom: -20px;
+        > li {
+            @include media-desk($md) {
+                margin-bottom: $global-margin;
+            }
+            a {
+                position: relative;
+                border-bottom: 2px solid transparent;
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: transparent;
+                    transform: translateY(5px);
+                    transition: transform .25s ease-in-out, background-color .25s ease-in-out;
+                }
+            }
+
+            &.uk-active {
+                a {
+                    &::after {
+                        background-color: $global-secondary-background;
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+
+    &__background {
+        height: calc(100% - #{$global-medium-margin * 2});
+        @include media-mob($sm) {
+            height: 50%;
+        }
+        @include media-mob($md) {
+            height: 40%;
+        }
+    }
+}

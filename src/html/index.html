@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base href="/">
+	<meta charset="UTF-8">
+	<meta property="og:image" content="images/dist/preview.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Тестовое задание на позицию верстальщика">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/images/favicon.png">
+	<title>Laneta</title>
+    <link rel="preload" crossorigin="anonymous" as="font" href="/fonts/Italiana/Italiana-Regular.woff2">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="tm-header uk-position-top">
+		<div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
+			<div class="uk-navbar-container uk-navbar-transparent">
+				<div class="uk-container">
+					<nav class="uk-light" data-uk-navbar>
+						<div class="uk-navbar-left">
+							<a href="/" class="tm-logo uk-navbar-item uk-logo">
+								<img src="/images/svg/logo.svg" alt="Laneta" loading="lazy" data-uk-img>
+							</a>
+						</div>
+						<div class="uk-navbar-right">
+							<div data-uk-toggle="target: #off-canvas-menu"
+								 class="tm-menu uk-navbar-item uk-flex uk-flex-middle uk-navbar-toggle">
+								<span class="uk-h5 uk-margin-remove-vertical uk-margin-right">Menu</span>
+								<div class="tm-menu__hamburger uk-flex uk-flex-column uk-flex-center">
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main data-uk-height-viewport="offset-bottom: true">
+
+		<!--Hero-->
+		<div class="tm-hero uk-position-relative">
+			<div class="uk-container uk-position-relative uk-position-z-index uk-light">
+				<div class="tm-hero__content-wrapper uk-flex uk-flex-middle">
+					<div class="tm-hero__content">
+						<span
+							data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 100"
+							class="tm-hero__title uk-heading-medium uk-display-block"
+						>
+							Luxury has never been so rewarding
+						</span>
+						<span
+							data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 400"
+							class="tm-hero__lead uk-width-large uk-display-block"
+						>
+							The next generation luxury loyalty program that rewards real cashback, with no strings attached
+						</span>
+						<button
+							data-uk-scrollspy="cls:uk-animation-fade; delay: 700"
+							class="uk-button uk-button-primary uk-button-large uk-margin-large-top"
+						>
+							Join Our Community
+						</button>
+						<div class="uk-box-shadow-medium" data-uk-dropdown="pos: bottom-justify">
+							<ul class="uk-nav uk-dropdown-nav uk-text-center">
+								<li><a href="/">Customer</a></li>
+								<li><a href="/">Partner</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tm-hero__overlay uk-position-cover">
+				<div class="uk-height-1-1">
+					<div class="uk-grid-collapse uk-height-1-1" data-uk-grid>
+						<div
+							class="uk-width-small uk-width-2-5@s">
+						</div>
+						<div data-uk-scrollspy="cls:uk-animation-fade"
+							 class="tm-hero__background uk-flex-1 uk-position-relative uk-background-cover"
+							 data-src="/images/home/hero.jpg" data-uk-img>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Hero-->
+
+		<!--Advantages-->
+		<section class="tm-advantages uk-section uk-section-default">
+			<div class="uk-container">
+				<div data-uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 100"
+					 data-uk-grid>
+					<div class="uk-width-5-6 uk-width-1-3@s">
+						<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block">
+							<strong>01</strong>
+						</span>
+						<h2 class="uk-h2 uk-margin-small-top">Simple to use</h2>
+						<p>Laneta luxury partner's brands are exclusive, we are not. It’s free and simple to join.</p>
+					</div>
+					<div class="uk-width-5-6 uk-width-1-3@s">
+						<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block">
+							<strong>02</strong>
+						</span>
+						<h2 class="uk-h2 uk-margin-small-top">Prestigious</h2>
+						<p>Shop online & instore of your favourite luxury brands.</p>
+					</div>
+					<div class="uk-width-5-6 uk-width-1-3@s">
+						<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block">
+							<strong>03</strong>
+						</span>
+						<h2 class="uk-h2 uk-margin-small-top">Secure</h2>
+						<p>Your details are protected by unbreakable bank-level security.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End Advantages-->
+
+		<!--Categories-->
+			<section class="tm-home-categories uk-section uk-section-default uk-position-relative">
+				<div class="uk-container uk-position-relative uk-position-z-index">
+					<div class="uk-position-relative uk-visible-toggle" tabindex="-1" data-uk-slideshow="animation: push">
+						<div class="uk-flex uk-flex-center uk-position-relative">
+							<ul data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 100"
+								class="tm-home-categories__items uk-slideshow-items uk-light uk-width-5-6@s">
+								<li>
+									<div class="uk-position-cover" data-uk-slideshow-parallax="scale: 1.2,1.2,1">
+										<img data-src="/images/home/categories/categories-aviation.jpg" alt="Aviation" data-uk-cover data-uk-img>
+									</div>
+									<div class="uk-position-cover"
+										 data-uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+									<div class="uk-position-center uk-position-medium uk-text-center">
+										<div data-uk-slideshow-parallax="scale: 1,1,0.8">
+											<h2 class="uk-heading-small uk-margin-large-bottom"
+												data-uk-slideshow-parallax="x: 200,0,0">Aviation</h2>
+											<a href="/#"
+											   class="uk-button uk-button-primary uk-button-large"
+											   data-uk-slideshow-parallax="x: 400,0,0;"
+											>
+												Learn More
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-position-cover" data-uk-slideshow-parallax="scale: 1.2,1.2,1">
+										<img data-src="/images/home/categories/categories-resorts.jpg" alt="Resorts" data-uk-cover data-uk-img>
+									</div>
+									<div class="uk-position-cover"
+										 data-uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+									<div class="uk-position-center uk-position-medium uk-text-center">
+										<div data-uk-slideshow-parallax="scale: 1,1,0.8">
+											<h2 class="uk-heading-small uk-margin-large-bottom"
+												data-uk-slideshow-parallax="x: 200,0,0">Resorts</h2>
+											<a href="/#"
+											   class="uk-button uk-button-primary uk-button-large"
+											   data-uk-slideshow-parallax="x: 400,0,0;"
+											>
+												Learn More
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-position-cover" data-uk-slideshow-parallax="scale: 1.2,1.2,1">
+										<img data-src="/images/home/categories/categories-golf.jpg" alt="Golf" data-uk-cover data-uk-img>
+									</div>
+									<div class="uk-position-cover"
+										 data-uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+									<div class="uk-position-center uk-position-medium uk-text-center">
+										<div data-uk-slideshow-parallax="scale: 1,1,0.8">
+											<h2 class="uk-heading-small uk-margin-large-bottom"
+												data-uk-slideshow-parallax="x: 200,0,0">Golf</h2>
+											<a href="/#"
+											   class="uk-button uk-button-primary uk-button-large"
+											   data-uk-slideshow-parallax="x: 400,0,0;"
+											>
+												Learn More
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-position-cover" data-uk-slideshow-parallax="scale: 1.2,1.2,1">
+										<img data-src="/images/home/categories/categories-retail.jpg" alt="Retail" data-uk-cover data-uk-img>
+									</div>
+									<div class="uk-position-cover"
+										 data-uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+									<div class="uk-position-center uk-position-medium uk-text-center">
+										<div data-uk-slideshow-parallax="scale: 1,1,0.8">
+											<h2 class="uk-heading-small uk-margin-large-bottom"
+												data-uk-slideshow-parallax="x: 200,0,0">Retail</h2>
+											<a href="/#"
+											   class="uk-button uk-button-primary uk-button-large"
+											   data-uk-slideshow-parallax="x: 400,0,0;"
+											>
+												Learn More
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-position-cover" data-uk-slideshow-parallax="scale: 1.2,1.2,1">
+										<img data-src="/images/home/categories/categories-transport.jpg" alt="Transport" data-uk-cover data-uk-img>
+									</div>
+									<div class="uk-position-cover"
+										 data-uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+									<div class="uk-position-center uk-position-medium uk-text-center">
+										<div data-uk-slideshow-parallax="scale: 1,1,0.8">
+											<h2 class="uk-heading-small uk-margin-large-bottom"
+												data-uk-slideshow-parallax="x: 200,0,0">Transport</h2>
+											<a href="/#"
+											   class="uk-button uk-button-primary uk-button-large"
+											   data-uk-slideshow-parallax="x: 400,0,0;"
+											>
+												Learn More
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-position-cover" data-uk-slideshow-parallax="scale: 1.2,1.2,1">
+										<img data-src="/images/home/categories/categories-wellness.jpg" alt="Wellness" data-uk-cover data-uk-img>
+									</div>
+									<div class="uk-position-cover"
+										 data-uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+									<div class="uk-position-center uk-position-medium uk-text-center">
+										<div data-uk-slideshow-parallax="scale: 1,1,0.8">
+											<h2 class="uk-heading-small uk-margin-large-bottom"
+												data-uk-slideshow-parallax="x: 200,0,0">Wellness</h2>
+											<a href="/#"
+											   class="uk-button uk-button-primary uk-button-large"
+											   data-uk-slideshow-parallax="x: 400,0,0;"
+											>
+												Learn More
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-position-cover" data-uk-slideshow-parallax="scale: 1.2,1.2,1">
+										<img data-src="/images/home/categories/categories-events.jpg" alt="Events" data-uk-cover data-uk-img>
+									</div>
+									<div class="uk-position-cover"
+										 data-uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+									<div class="uk-position-center uk-position-medium uk-text-center">
+										<div data-uk-slideshow-parallax="scale: 1,1,0.8">
+											<h2 class="uk-heading-small uk-margin-large-bottom"
+												data-uk-slideshow-parallax="x: 200,0,0">Events</h2>
+											<a href="/#"
+											   class="uk-button uk-button-primary uk-button-large"
+											   data-uk-slideshow-parallax="x: 400,0,0;"
+											>
+												Learn More
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-position-cover" data-uk-slideshow-parallax="scale: 1.2,1.2,1">
+										<img data-src="/images/home/categories/categories-super-yachts.jpg" alt="SuperYachts" data-uk-cover data-uk-img>
+									</div>
+									<div class="uk-position-cover"
+										 data-uk-slideshow-parallax="opacity: 0,0,0.2; backgroundColor: #000,#000"></div>
+									<div class="uk-position-center uk-position-medium uk-text-center">
+										<div data-uk-slideshow-parallax="scale: 1,1,0.8">
+											<h2 class="uk-heading-small uk-margin-large-bottom"
+												data-uk-slideshow-parallax="x: 200,0,0">SuperYachts</h2>
+											<a href="/#"
+											   class="uk-button uk-button-primary uk-button-large"
+											   data-uk-slideshow-parallax="x: 400,0,0;"
+											>
+												Learn More
+											</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<div class="tm-home-categories__arrows-nav">
+								<a class="uk-position-center-left uk-position-small" href="/#"
+								   data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
+								<a class="uk-position-center-right uk-position-small" href="/#"
+								   data-uk-slidenav-next data-uk-slideshow-item="next"></a>
+							</div>
+						</div>
+						<div class="uk-flex uk-flex-center uk-margin-medium-top">
+							<ul data-uk-scrollspy="target: > li; cls:uk-animation-fade; delay: 200"
+								class="tm-home-categories__bottom-nav uk-thumbnav uk-flex uk-flex-between@m uk-width-5-6@s uk-width-1-1@m">
+								<li class="uk-width-1-3 uk-width-1-4@s uk-width-auto@m" data-uk-slideshow-item="0">
+									<a href="/#" class="uk-link-heading"><span class="uk-h4">Aviation</span></a>
+								</li>
+								<li class="uk-width-1-3 uk-width-1-4@s uk-width-auto@m" data-uk-slideshow-item="1">
+									<a href="/#" class="uk-link-heading"><span class="uk-h4">Resorts</span></a>
+								</li>
+								<li class="uk-width-1-3 uk-width-1-4@s uk-width-auto@m" data-uk-slideshow-item="2">
+									<a href="/#" class="uk-link-heading"><span class="uk-h4">Golf</span></a>
+								</li>
+								<li class="uk-width-1-3 uk-width-1-4@s uk-width-auto@m" data-uk-slideshow-item="3">
+									<a href="/#" class="uk-link-heading"><span class="uk-h4">Retail</span></a>
+								</li>
+								<li class="uk-width-1-3 uk-width-1-4@s uk-width-auto@m" data-uk-slideshow-item="4">
+									<a href="/#" class="uk-link-heading"><span class="uk-h4">Transport</span></a>
+								</li>
+								<li class="uk-width-1-3 uk-width-1-4@s uk-width-auto@m" data-uk-slideshow-item="5">
+									<a href="/#" class="uk-link-heading"><span class="uk-h4">Wellness</span></a>
+								</li>
+								<li class="uk-width-1-3 uk-width-1-4@s uk-width-auto@m" data-uk-slideshow-item="6">
+									<a href="/#" class="uk-link-heading"><span class="uk-h4">Events</span></a>
+								</li>
+								<li class="uk-width-1-3 uk-width-1-4@s uk-width-auto@m" data-uk-slideshow-item="7">
+									<a href="/#" class="uk-link-heading"><span class="uk-h4">SuperYachts</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="tm-home-categories__background uk-width-1-1 uk-position-bottom uk-background-muted"></div>
+			</section>
+		<!--End Categories-->
+
+		<!--Steve Jobs-->
+		<section class="tm-home-steve-jobs uk-section uk-section-default uk-section-large uk-text-center">
+			<div class="uk-container uk-width-xlarge uk-width-2xlarge@m">
+				<span data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 100"
+					  class="tm-home-steve-jobs__quote uk-h1 uk-display-block">
+					“People don't know what they want until you show it to them.”
+				</span>
+				<div class="tm-signature">
+					<span class="tm-signature__divider uk-display-inline-block"></span>
+					<span class="uk-h4 uk-display-block uk-margin-remove">Steve Jobs</span>
+				</div>
+			</div>
+		</section>
+		<!--End Steve Jobs-->
+
+		<!--How Its Work-->
+		<div class="tm-home-how-it-works uk-position-relative">
+			<section class="tm-home-how-it-works__header uk-section uk-section-muted">
+				<div class="uk-container uk-position-relative uk-position-z-index">
+					<div class="uk-grid-column-collapse" data-uk-grid>
+						<div class="uk-visible@s uk-width-2-5"></div>
+						<div class="tm-home-how-it-works__title uk-width-3-5@s"
+							 data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300">
+							<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block">
+								<strong>How it works</strong>
+							</span>
+							<h2 class="uk-heading-small uk-margin-small-top">
+								Get inspired with our <br>exclusive luxury <br>partners
+							</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="tm-home-how-it-works__content uk-section uk-section-muted">
+				<div class="tm-home-how-it-works__content-container">
+					<div data-uk-grid>
+						<div class="uk-width-1-1 uk-width-1-2@s">
+							<div
+								data-uk-scrollspy="cls:uk-animation-fade; delay: 100"
+								class="tm-home-how-it-works__image"
+								data-src="/images/home/how-it-works.jpg"
+								data-uk-parallax="y: -20,0; media: @s"
+								data-uk-img>
+							</div>
+						</div>
+						<p data-uk-scrollspy="cls:uk-animation-fade; delay: 300"
+						   class="tm-home-how-it-works__content-text uk-width-1-1 uk-width-2-5@s">
+							Browse our categories that showcase luxury brands, services and experiences. From there you will
+							connect directly with the brand for all bookings and purchases for your convenience. Caléna is
+							designed for all your personal and corporate needs.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!--End How Its Work-->
+
+		<!--About-->
+		<section class="tm-home-about uk-section uk-section-muted uk-position-relative">
+			<div class="uk-container">
+				<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block"
+					  data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300">
+					<strong>About</strong>
+				</span>
+				<h2 data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300"
+					class="tm-home-about__title uk-heading-small uk-margin-small-top uk-width-2-3@s uk-width-1-2@l">
+					Laneta's loyalty <br>program is unrivalled
+				</h2>
+				<div class="tm-home-about__content uk-margin-large-top" data-uk-grid>
+					<div class="uk-visible@s uk-width-1-6"></div>
+					<div class="uk-width-1-2@s">
+						<div data-uk-grid>
+							<div class="uk-width-5-6@s">
+								<div class="tm-home-about__first-part uk-grid-collapse uk-position-relative" data-uk-grid>
+									<p data-uk-scrollspy="cls:uk-animation-fade; delay: 300"
+									   class="tm-home-about__first-part-text uk-width-1-2 uk-width-1-1@s">
+										Laneta is an elite community of luxury brands that understand the importance of loyal customers.
+									</p>
+									<div
+										data-uk-scrollspy="cls:uk-animation-slide-right-small; delay: 100"
+										class="tm-home-about__first-part-image uk-width-1-2 uk-hidden@s uk-background-cover uk-position-right"
+										data-src="/images/home/about-2.jpg"
+										data-uk-img>
+									</div>
+								</div>
+
+								<div class="tm-home-about__second-part uk-grid-column-collapse uk-position-relative" data-uk-grid>
+									<div class="uk-hidden@s uk-width-1-3"></div>
+									<div
+										data-uk-scrollspy="cls:uk-animation-slide-left-small; delay: 100"
+										class="tm-home-about__second-part-image uk-width-1-3 uk-hidden@s uk-background-cover uk-position-left"
+										data-src="/images/home/about-1.jpg"
+										data-uk-img>
+									</div>
+									<p data-uk-scrollspy="cls:uk-animation-fade; delay: 300"
+									   class="tm-home-about__second-part-text uk-width-2-3 uk-width-1-1@s">
+										Whether it is a single purchase or an experience that requires end to end solutions
+										our
+										loyalty program will connect you with trusted brands to achieve your goals.
+									</p>
+								</div>
+								<div class="uk-margin-large-top uk-margin-bottom uk-text-center uk-text-left@s">
+									<button data-uk-scrollspy="cls:uk-animation-fade; delay: 500"
+											class="uk-button uk-button-primary uk-button-large">
+										Sign Up
+									</button>
+									<div class="uk-box-shadow-medium" data-uk-dropdown="pos: bottom-justify">
+										<ul class="uk-nav uk-dropdown-nav uk-text-center">
+											<li><a href="/#">Customer</a></li>
+											<li><a href="/#">Partner</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="uk-position-right uk-width-1-3 uk-width-2-5@m uk-margin-xlarge-bottom uk-margin-large-top uk-visible@s">
+				<div
+					data-uk-scrollspy="cls:uk-animation-fade; delay: 100"
+					class="tm-home-about__right-image uk-background-cover"
+					data-src="/images/home/about-2.jpg"
+					data-uk-parallax="y: -20,0; media: @s"
+					data-uk-img>
+				</div>
+			</div>
+			<div class="uk-position-bottom-left uk-width-1-6 uk-width-1-5@xl uk-visible@s">
+				<div
+					data-uk-scrollspy="cls:uk-animation-fade; delay: 100"
+					class="tm-home-about__left-image uk-background-cover"
+					data-src="/images/home/about-1.jpg"
+					data-uk-parallax="y: 20,0; media: @s"
+					data-uk-img>
+				</div>
+			</div>
+		</section>
+		<!--End About-->
+
+		<!--Security-->
+		<section class="tm-home-security uk-section uk-section-default">
+			<div class="uk-container" data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300">
+				<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block">
+					<strong>Security</strong>
+				</span>
+				<h2 class="uk-heading-small uk-margin-small-top uk-width-2xlarge">
+					Laneta is serious about security and protecting you
+				</h2>
+			</div>
+			<div class="tm-home-security__content uk-position-relative">
+				<div class="uk-container">
+					<div class="uk-grid-column-collapse" data-uk-grid>
+						<div class="tm-home-security__image-container uk-width-1-1 uk-width-1-2@s">
+							<div class="uk-grid-collapse uk-height-1-1" data-uk-grid>
+								<div class="uk-width-5-6@s">
+									<div data-uk-scrollspy="cls:uk-animation-fade; delay: 100"
+										 class="tm-home-security__image uk-background-cover"
+										 data-src="/images/home/security.jpg"
+										 data-uk-parallax="y: -20,0; media: @s"
+										 data-uk-img>
+									</div>
+								</div>
+								<div class="uk-visible@s uk-width-1-6"></div>
+							</div>
+						</div>
+
+						<div class="uk-visible@s uk-width-1-2"></div>
+						<div class="tm-home-security__right-block uk-width-1-2@s">
+							<div data-uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 200"
+								 class="uk-grid-column-collapse uk-child-width" data-uk-grid>
+								<div>
+									<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block">
+										<strong>01</strong>
+									</span>
+									<h2 class="uk-h2 uk-margin-small-top">Your data</h2>
+									<p>Your data is not for sale. We will never sell you data to businesses or third parties. We
+										reveal none of your account details to partners when you transact, and our platform is
+										air-tight.</p>
+								</div>
+								<div>
+									<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block">
+										<strong>02</strong>
+									</span>
+									<h2 class="uk-h2 uk-margin-small-top">Your bank card information</h2>
+									<p>We do not store any banking information on our site. We have partnered with Yodlee who
+										are leaders in secure hosting that uses bank-grade security and data encryption
+										services.</p>
+								</div>
+								<div>
+									<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block">
+										<strong>03</strong>
+									</span>
+									<h2 class="uk-h2 uk-margin-small-top">Your cashback wallet</h2>
+									<p>
+										We use bank-level security (256-bit encryption) to ensure your information and your
+										cashback wallet is secure and safe.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!--End Security-->
+
+		<!--Partners-->
+		<section class="tm-home-partners uk-section uk-section-muted">
+			<div class="uk-container">
+				<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block"
+					  data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300">
+					<strong>Partners</strong>
+				</span>
+				<h2 data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300"
+					class="uk-heading-small uk-margin-small-top">
+					Trust our brands
+				</h2>
+				<p data-uk-scrollspy="cls:uk-animation-fade; delay: 300">
+					Collaborate with our exclusive luxury partners for the perfect experience
+				</p>
+				<div data-uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 100"
+					 class="uk-margin-medium-top uk-child-width-1-3 uk-child-width-1-4@s" data-uk-grid>
+					<div>
+						<div class="tm-home-partners__item-container">
+							<img src="/images/home/partners/nautilus-aviation.png" alt="Nautilus Aviation">
+						</div>
+					</div>
+					<div>
+						<div class="tm-home-partners__item-container">
+							<img src="/images/home/partners/crown-resorts.png" alt="Crown Resorts">
+						</div>
+					</div>
+					<div>
+						<div class="tm-home-partners__item-container">
+							<img src="/images/home/partners/royal-golf-club.png" alt="The Royal Melbourne Golf Club">
+						</div>
+					</div>
+					<div>
+						<div class="tm-home-partners__item-container">
+							<img src="/images/home/partners/navair.png" alt="Navair">
+						</div>
+					</div>
+					<div>
+						<div class="tm-home-partners__item-container">
+							<img src="/images/home/partners/prancing-horse.png" alt="Prancing Horse">
+						</div>
+					</div>
+					<div>
+						<div class="tm-home-partners__item-container">
+							<img src="/images/home/partners/hom.png" alt="Hom">
+						</div>
+					</div>
+					<div>
+						<div class="tm-home-partners__item-container">
+							<img src="/images/home/partners/champman.png" alt="Champman">
+						</div>
+					</div>
+					<div>
+						<div class="tm-home-partners__item-container">
+							<img src="/images/home/partners/qualia.png" alt="Qualia">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End Partners-->
+
+		<!--Registration-->
+		<section class="uk-section uk-section-large uk-background-cover uk-position-relative"
+				 data-src="/images/home/cta.jpg" data-uk-img>
+			<div class="uk-container uk-position-relative uk-position-z-index uk-flex uk-flex-middle uk-flex-column">
+				<div class="uk-width-xlarge@s uk-width-2xlarge@l">
+					<div class="uk-light" data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300">
+						<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block">
+							<strong>Sign Up</strong>
+						</span>
+						<h2 class="uk-heading-small uk-margin-small-top">Registration</h2>
+					</div>
+					<div data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 400"
+							 class="tm-form-card uk-card uk-card-large uk-card-body uk-card-default uk-position-relative uk-margin-medium-top">
+						<form class="uk-form-stacked">
+							<div class="uk-margin-medium">
+								<input type="text" class="uk-input" placeholder="First Name">
+							</div>
+							<div class="uk-margin-medium">
+								 <input type="text" class="uk-input" placeholder="Last Name">
+							</div>
+							<div class="uk-margin-medium">
+								<input type="text" class="uk-input" placeholder="Email">
+							</div>
+							<div class="uk-margin-medium">
+								<div class="uk-width-1-1 uk-inline">
+									<a class="uk-form-icon uk-form-icon-flip" href="#" data-uk-icon="lock"></a>
+									<input class="uk-input" type="password" placeholder="Password">
+								</div>
+							</div>
+							<div class="uk-margin-medium">
+								<div class="uk-width-1-1 uk-inline">
+									<a class="uk-form-icon uk-form-icon-flip" href="#" data-uk-icon="lock"></a>
+									<input class="uk-input" type="password" placeholder="Confirm Password">
+								</div>
+							</div>
+							<div class="uk-margin-medium-top uk-flex uk-flex-middle">
+								<button class="uk-button uk-button-large uk-button-primary uk-margin-small-right"
+										type="submit">
+									<span class="uk-display-block uk-position-relative uk-light">Register</span>
+								</button>
+							</div>
+							<a
+								class="uk-display-block uk-text-small uk-link-text uk-margin-small-top"
+								href="/">
+								Have an account?
+							</a>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="uk-overlay-primary uk-position-cover"></div>
+		</section>
+		<!--End Registration-->
+
+		<!--Testimonials-->
+		<section class="tm-home-testimonials uk-section uk-section-default">
+			<div class="uk-container">
+				<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block"
+					  data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300">
+					<strong>Testimonials</strong>
+				</span>
+				<h2 data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300"
+					class="uk-heading-small uk-margin-small-top">
+					What our community is saying
+				</h2>
+				<div data-uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 100"
+					 class="uk-margin-medium-top uk-child-width-1-3@s" data-uk-grid>
+					<div>
+						<div class="uk-card uk-card-body uk-background-muted">
+							<span class="tm-home-testimonials__quote uk-display-block uk-text-primary uk-margin-small-bottom">
+								<i data-uk-icon="icon: quote-right; ratio: 1.5"></i>
+							</span>
+							<p class="uk-margin-remove">I have saved over 7&nbsp;000$ last month on travel expenses</p>
+						</div>
+						<div class="tm-home-testimonials__item-footer uk-text-right uk-margin-top">
+							<span class="uk-text-bold uk-text-emphasis uk-display-block">David A.</span>
+							<span class="uk-text-muted">Entrepreneur</span>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-body uk-background-muted">
+							<span class="tm-home-testimonials__quote uk-display-block uk-text-primary uk-margin-small-bottom">
+								<i data-uk-icon="icon: quote-right; ratio: 1.5"></i>
+							</span>
+							<p class="uk-margin-remove">I have saved over 7&nbsp;000$ last month on travel expenses</p>
+						</div>
+						<div class="tm-home-testimonials__item-footer uk-text-right uk-margin-top">
+							<span class="uk-text-bold uk-text-emphasis uk-display-block">David A.</span>
+							<span class="uk-text-muted">Entrepreneur</span>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-body uk-background-muted">
+							<span class="tm-home-testimonials__quote uk-display-block uk-text-primary uk-margin-small-bottom">
+								<i data-uk-icon="icon: quote-right; ratio: 1.5"></i>
+							</span>
+							<p class="uk-margin-remove">I have saved over 7&nbsp;000$ last month on travel expenses</p>
+						</div>
+						<div class="tm-home-testimonials__item-footer uk-text-right uk-margin-top">
+							<span class="uk-text-bold uk-text-emphasis uk-display-block">David A.</span>
+							<span class="uk-text-muted">Entrepreneur</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End Testimonials-->
+
+		<!--FAQ-->
+		<section class="tm-home-faq uk-section uk-section-default">
+			<div class="uk-container">
+				<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block"
+					  data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300">
+					<strong>FAQ</strong>
+				</span>
+				<h2 data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300"
+					class="uk-heading-small uk-margin-small-top uk-width-2-3@s uk-width-1-1@m">
+					We thought you might have questions
+				</h2>
+				<ul data-uk-scrollspy="target: > li; cls:uk-animation-fade; delay: 100"
+					class="tm-home-faq__accordion uk-margin-medium-top" data-uk-accordion>
+					<li class="tm-home-faq__accordion-item uk-open">
+						<a class="tm-home-faq__accordion-title uk-accordion-title" href="/#">
+							<span class="uk-h3 uk-margin-remove">How can i sign up?</span>
+						</a>
+						<div class="uk-accordion-content">
+							<p>Go to the sign up page, enter your name, email and link your payment card.  This process only needs to be completed once and it only takes a few moments to complete.</p>
+						</div>
+					</li>
+					<li class="tm-home-faq__accordion-item">
+						<a class="tm-home-faq__accordion-title uk-accordion-title" href="/#">
+							<span class="uk-h3 uk-margin-remove">Is membership available internationally?</span>
+						</a>
+						<div class="uk-accordion-content">
+							<p>Go to the sign up page, enter your name, email and link your payment card.  This process only needs to be completed once and it only takes a few moments to complete.</p>
+						</div>
+					</li>
+					<li class="tm-home-faq__accordion-item">
+						<a class="tm-home-faq__accordion-title uk-accordion-title" href="/#">
+							<span class="uk-h3 uk-margin-remove">Can I see the full list of benefits?</span>
+						</a>
+						<div class="uk-accordion-content">
+							<p>Go to the sign up page, enter your name, email and link your payment card.  This process only needs to be completed once and it only takes a few moments to complete.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--End FAQ-->
+
+		<!--Luxury Business-->
+		<section class="tm-home-luxury-businesses uk-section uk-section-muted uk-position-relative">
+			<div class="uk-container">
+				<div data-uk-grid>
+					<div class="tm-home-luxury-businesses__content uk-width-2-3@s uk-width-1-2@m">
+						<span class="tm-title-caption uk-text-muted uk-text-uppercase uk-display-block"
+							  data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300">
+							<strong>Become our partner</strong>
+						</span>
+						<h2 data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 300"
+							class="uk-heading-small uk-margin-small-top">Luxury Businesses</h2>
+						<div data-uk-scrollspy="target: > p; cls:uk-animation-fade; delay: 100"
+							 class="tm-home-luxury-businesses__content-text">
+							<p>
+								Our card-linked platform features a Cost-Per-Revenue model that drives motivated customers to
+								your brands aimed at building long-term loyalty.
+							</p>
+							<p>
+								Our customer engagement platform allows you to have real connections with customers which
+								improves customer satisfaction, sales, and retention.
+							</p>
+							<p>
+								Want to grow your brand and reward loyal customers? We can have you live on Caléna in just
+								minutes
+							</p>
+						</div>
+
+						<button data-uk-scrollspy="cls:uk-animation-fade; delay: 500"
+								class="uk-button uk-button-primary uk-button-large uk-margin-top">
+							Contact Us
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="tm-home-luxury-businesses__image uk-width-1-2@m">
+				<div
+					data-uk-scrollspy="cls:uk-animation-fade; delay: 300"
+					class="uk-background-cover uk-height-1-1"
+					data-src="/images/home/luxury-businesses.jpg"
+					data-uk-img>
+				</div>
+			</div>
+		</section>
+		<!--End Luxury Business-->
+
+	</main>
+
+ 	<footer
+		class="tm-footer uk-section uk-section-small tm-background-gradient-secondary uk-light"
+		data-uk-scrollspy="cls:uk-animation-fade; delay: 200"
+	>
+        <div class="uk-container">
+            <div class="tm-footer__content" data-uk-grid>
+                <div>
+                    <a href="/" class="tm-logo">
+                        <img src="/images/svg/logo.svg" alt="Laneta" data-uk-img>
+                    </a>
+                </div>
+                <div>
+                    <div class="tm-footer__social uk-flex uk-flex-middle">
+                        <a class="uk-link-muted" href="/https://facebook.com"
+						   data-uk-icon="icon: facebook; ratio: 1.3"></a>
+                        <a class="uk-link-muted" href="/https://linkedin.com"
+						   data-uk-icon="icon: linkedin; ratio: 1.3"></a>
+                        <a class="uk-link-muted" href="/https://instagram.com"
+						   data-uk-icon="icon: instagram; ratio: 1.3"></a>
+                        <a class="uk-link-muted" href="/https://twitter.com"
+						   data-uk-icon="icon: twitter; ratio: 1.3"></a>
+                    </div>
+                </div>
+                <div>
+                    <span>&copy; 2021 Laneta - Luxury Loyalty</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="tm-offcanvas-menu" id="off-canvas-menu" data-uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical"
+				data-uk-scrollspy="cls:uk-animation-slide-left-medium">
+                <li class="uk-active">
+                    <a href="/" class="tm-offcanvas-menu__link uk-h3 uk-margin-remove-bottom uk-link-heading">Home</a>
+                </li>
+                <li>
+                    <a href="/" class="tm-offcanvas-menu__link uk-h3 uk-margin-remove-bottom uk-link-heading">Offers</a>
+                </li>
+                <li>
+                    <a href="/" class="tm-offcanvas-menu__link uk-h3 uk-margin-remove-bottom uk-link-heading">Contact us</a>
+                </li>
+                <li class="uk-nav-divider uk-margin-medium-bottom uk-margin-medium-top"></li>
+                <li class="uk-nav-header">Sign In</li>
+                <li>
+                    <a href="/" class="tm-offcanvas-menu__link uk-h3 uk-margin-remove-bottom uk-link-heading">Login</a>
+                </li>
+                <li class="uk-nav-divider uk-margin-medium-bottom uk-margin-medium-top"></li>
+                <li class="uk-nav-header">Sign Up</li>
+                <li>
+                    <a href="/" class="tm-offcanvas-menu__link uk-h3 uk-margin-remove-bottom uk-link-heading">Customer</a>
+                </li>
+                <li>
+                    <a href="/" class="tm-offcanvas-menu__link uk-h3 uk-margin-remove-bottom uk-link-heading">Partner</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <base href="/">
+	<title><!--#echo var="title" --></title>
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Тестовое задание на позицию верстальщика">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Layout Builder Test</title>
+    <link rel="preload" crossorigin="anonymous" as="font" href="fonts/Italiana/Italiana-Regular.woff2">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+	<link href="css/app.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="tm-header uk-position-top">
+	<div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
+		<div class="uk-navbar-container uk-navbar-transparent">
+			<div class="uk-container">
+				<nav class="uk-light" data-uk-navbar>
+					<div class="uk-navbar-left">
+						<a href="/" class="tm-logo uk-navbar-item uk-logo">
+							<img src="images/dist/svg/logo.svg" alt="Laneta" loading="lazy" data-uk-img>
+						</a>
+					</div>
+					<div class="uk-navbar-right">
+						<div data-uk-toggle="target: #off-canvas-menu"
+							 class="tm-menu uk-navbar-item uk-flex uk-flex-middle uk-navbar-toggle">
+							<span class="uk-h5 uk-margin-remove-vertical uk-margin-right">Menu</span>
+							<div class="tm-menu__hamburger uk-flex uk-flex-column uk-flex-center">
+								<div></div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>

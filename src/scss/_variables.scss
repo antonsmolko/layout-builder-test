@@ -1,0 +1,114 @@
+// Brakepoints
+$xs: '560px';
+$sm: '640px';
+$md: '960px';
+$lg: '1200px';
+$xl: '1600px';
+$xxl: '1800px';
+
+// Base
+$global-font-family: 'montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$base-heading-font-family: 'italiana';
+$base-body-font-weight: 400;
+$global-line-height: 1.7;
+$global-font-size-sm: 14px;
+$global-font-size: 16px;
+$base-strong-font-weight: 500;
+
+// Colors
+$accent-color: #B4A186;
+$accent-alias: Tan;
+$beige-background: #E6E1DC;
+$global-background: #F2F1F0;
+$global-primary-background: $accent-color;
+$global-secondary-background: #1B474D;
+$global-secondary-gradient: linear-gradient(to right, #1B474D, #2E6971);
+$global-color: #555;
+$global-emphasis-color: #171717;
+$global-inverse-color: #f0f0f0;
+$inverse-global-color: rgba($global-inverse-color, .7);
+
+// Background
+$global-muted-background: #ECEAE8;
+
+// Description List
+$description-list-term-color: $global-primary-background;
+
+// Accordion
+$accordion-icon-size: 21;
+$accordion-icon-size-m: 25;
+$accordion-icon-offset-size: 10;
+$accordion-icon-offset-size-m: 12;
+$internal-accordion-image: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22#{$accordion-icon-size}%22%20height%3D%22#{$accordion-icon-size}%22%20viewBox%3D%220%200%20#{$accordion-icon-size}%20#{$accordion-icon-size}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22#000%22%20width%3D%22#{$accordion-icon-size}%22%20height%3D%221%22%20x%3D%220%22%20y%3D%22#{$accordion-icon-offset-size}%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22#000%22%20width%3D%221%22%20height%3D%22#{$accordion-icon-size}%22%20x%3D%22#{$accordion-icon-offset-size}%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E";
+$internal-accordion-image-m: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22#{$accordion-icon-size-m}%22%20height%3D%22#{$accordion-icon-size-m}%22%20viewBox%3D%220%200%20#{$accordion-icon-size-m}%20#{$accordion-icon-size-m}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22#000%22%20width%3D%22#{$accordion-icon-size-m}%22%20height%3D%221%22%20x%3D%220%22%20y%3D%22#{$accordion-icon-offset-size-m}%22%20%2F%3E%0A%20%20%20%20%3Crect%20fill%3D%22#000%22%20width%3D%221%22%20height%3D%22#{$accordion-icon-size-m}%22%20x%3D%22#{$accordion-icon-offset-size-m}%22%20y%3D%220%22%20%2F%3E%0A%3C%2Fsvg%3E";
+$accordion-icon-color: $global-primary-background;
+
+// Container
+$container-xsmall-max-width: 830px;
+$container-small-max-width: 980px;
+
+// Controls
+$global-control-large-height-xs: 50px;
+$global-control-large-height-sm: 60px;
+$global-control-large-height: 67px;
+
+// Cards
+$card-default-background: #F8F8F8;
+// Buttons
+$inverse-button-primary-background: $global-primary-background;
+
+$inverse-button-primary-color: $global-inverse-color;
+$inverse-button-primary-hover-background: darken($inverse-button-primary-background, 5%);
+$inverse-button-primary-hover-color: $global-inverse-color;
+$inverse-button-primary-active-background: darken($inverse-button-primary-background, 10%);
+$inverse-button-primary-active-color: $global-inverse-color;
+
+$button-large-font-size-sm: $global-font-size;
+$button-large-font-size: $global-font-size * 1.125;
+
+// Form
+$form-background: transparent;
+$form-focus-background: transparent;
+$form-border: #B1AEAC;
+$form-radio-checked-border: $global-primary-background;
+
+// Heading
+$heading-medium-font-size-l: 5rem;
+$heading-small-font-size-m: $heading-medium-font-size-l * .75;
+$heading-small-font-size: $heading-small-font-size-m * .75;
+
+$heading-medium-font-size-m: $heading-medium-font-size-l * .85;
+$heading-medium-font-size: $heading-medium-font-size-m;
+$heading-medium-font-size-s: $heading-medium-font-size-m * .7;
+$heading-small-font-size-s: $heading-medium-font-size-s * .72;
+$heading-medium-font-size-xl: 6rem;
+$heading-medium-line-height: 1.25;
+
+// Nav
+$nav-default-item-active-color: $global-primary-background;
+$nav-primary-item-active-color: $global-primary-background;
+$inverse-nav-default-item-active-color: lighten($global-primary-background, 10%);
+$inverse-nav-primary-item-active-color: lighten($global-primary-background, 10%);
+$navbar-nav-item-active-color: $global-primary-background;
+$inverse-navbar-nav-item-active-color: lighten($global-primary-background, 10%);
+
+
+// Navbar
+$navbar-nav-item-padding-horizontal: 18px;
+$navbar-nav-item-padding-horizontal-lg: 45px;
+$navbar-nav-item-font-size: $global-font-size;
+$inverse-navbar-nav-item-color: $global-inverse-color;
+
+// Section
+$section-padding-vertical-m: 100px;
+$section-padding-vertical-s: 60px;
+
+// Width
+$width-small-width: 160px;
+$width-large-width: 480px;
+
+// Inverse
+$inverse-text-primary-color: lighten($global-primary-background, 10%);
+
+// Offcanvas
+$offcanvas-overlay-background: rgba(0,0,0,0.2);

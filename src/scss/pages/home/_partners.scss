@@ -1,0 +1,10 @@
+.tm-home-partners {
+    &__item-container {
+        @include media-mob($sm) {
+            padding: $global-margin;
+        }
+        @include media-mob($md) {
+            padding: $global-medium-margin;
+        }
+    }
+}

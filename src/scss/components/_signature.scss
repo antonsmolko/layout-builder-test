@@ -1,0 +1,7 @@
+.tm-signature {
+    &__divider {
+        width: $global-gutter;
+        height: 1px;
+        background: $global-muted-color;
+    }
+}

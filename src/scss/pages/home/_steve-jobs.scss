@@ -1,0 +1,7 @@
+.tm-home-steve-jobs {
+    &__quote {
+        @include media-desk($sm) {
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.tm-home-luxury-businesses {
+    @include media-desk($md) {
+        padding-bottom: 0 !important;
+    }
+    &__content-text {
+        max-width: 450px;
+    }
+    &__image {
+        height: 340px;
+        margin-top: $global-medium-margin;
+        @include media-mob($sm) {
+            height: 680px;
+        }
+        @include media-mob($md) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin-top: 0;
+            height: 100%;
+        }
+    }
+}

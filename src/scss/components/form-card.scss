@@ -1,0 +1,32 @@
+@import '../overwrites';
+
+$alert-horizontal-padding: $global-gutter;
+$alert-horizontal-padding-l: $global-large-margin;
+
+.tm-form-card {
+  form {
+    @include media-desk($lg) {
+      margin-top: $global-small-gutter;
+    }
+    @include media-desk($sm) {
+      margin-top: $global-margin;
+    }
+  }
+
+  &__alert {
+    line-height: 1;
+    padding: $global-small-gutter $alert-horizontal-padding 0 $alert-horizontal-padding;
+    @include media-mob($sm) {
+      padding: $global-margin $alert-horizontal-padding 0 $alert-horizontal-padding;
+    }
+    @include media-mob($lg) {
+      padding: $global-gutter $alert-horizontal-padding-l 0 $alert-horizontal-padding-l;
+    }
+  }
+
+  &__spinner {
+    display: block;
+    width: $global-gutter;
+    height: $global-gutter;
+  }
+}

@@ -1,0 +1,24 @@
+.tm-beige-background {
+  background-color: $beige-background;
+  .uk-text-muted {
+    color: rgba(#3B3530, .4);
+  }
+  .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5 {
+    color: #3B3530;
+  }
+
+  hr {
+    border-top: 1px solid rgba(59, 53, 48, 0.1);
+  }
+
+  .uk-description-list {
+    dt {
+      color: #B5996F;
+    }
+  }
+}
+
+.tm-background-gradient-secondary {
+  background-color: $global-secondary-background;
+  background-image: $global-secondary-gradient;
+}

@@ -1,0 +1,45 @@
+.tm-hero {
+    &__background {
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(15, 15, 15, 0.48) -8.5%, rgba(56, 50, 30, 0) 30%);
+        }
+    }
+
+    &__content-wrapper {
+        min-height: 520px;
+        height: 100vh;
+        @include media-portrait() {
+            max-height: 150vw !important;
+        }
+        @include media-mob-portrait($sm) {
+            max-height: 80vw !important;
+        }
+    }
+
+    &__title {
+        width: 280px;
+        @include media-mob($sm) {
+            width: 520px;
+        }
+        @include media-mob($lg) {
+            width: 700px;
+        }
+    }
+
+    &__lead {
+        width: 250px;
+        @include media-mob($sm) {
+            width: 450px;
+        }
+        @include media-mob($lg) {
+            width: 480px;
+        }
+    }
+}

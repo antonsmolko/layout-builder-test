@@ -1,0 +1,9 @@
+@import '../overwrites';
+
+.tm-social {
+  a {
+    &:not(:first-child) {
+      margin-left: $global-gutter;
+    }
+  }
+}

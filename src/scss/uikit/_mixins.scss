@@ -1,0 +1,170 @@
+// Accordion
+@mixin hook-accordion-title() {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-left: $accordion-icon-margin-left;
+    float: right;
+    @include svg-fill($internal-accordion-image, "#000", $accordion-icon-color);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: transform .25s ease-in-out;
+    @include media-mob($md) {
+      width: 24px;
+      height: 24px;
+      @include svg-fill($internal-accordion-image-m, "#000", $accordion-icon-color);
+    }
+  }
+
+  .uk-open & {
+    &::before {
+      @include svg-fill($internal-accordion-image, "#000", $accordion-icon-color);
+      transform: rotate(-45deg);
+      @include media-mob($md) {
+        @include svg-fill($internal-accordion-image-m, "#000", $accordion-icon-color);
+      }
+    }
+  }
+}
+
+// Base
+@mixin hook-base-body() {
+  text-rendering: optimizeLegibility;
+  //-webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  font-size: $global-font-size-sm;
+  background-color: $global-secondary-background;
+  background-image: $global-secondary-gradient;
+  @include media-mob($lg) {
+    font-size: $base-body-font-size;
+  }
+}
+
+// Buttons
+@mixin hook-button() {
+  font-weight: $base-strong-font-weight;
+}
+
+@mixin hook-button-large() {
+  min-width: 160px;
+  font-size: $global-font-size;
+  line-height: $global-control-large-height-xs - ($button-border-width * 2);
+  padding: 0 $global-small-gutter;
+  @include media-mob($sm) {
+    line-height: $global-control-large-height-sm - ($button-border-width * 2);
+    padding: 0 $global-margin;
+    min-width: 225px;
+  }
+  @include media-mob($lg) {
+    padding: 0 $button-large-padding-horizontal;
+    line-height: $button-large-line-height;
+    font-size: $button-large-font-size;
+    min-width: 265px;
+  }
+}
+
+// Description List
+@mixin hook-description-list-term() {
+  font-size: $global-small-font-size;
+  font-weight: $base-strong-font-weight;
+}
+
+// Form
+@mixin hook-form-single-line() {
+  border-bottom-color: $form-border;
+  border-bottom-style: solid;
+  border-bottom-width: $global-border-width;
+}
+@mixin hook-form-radio() {
+  border-style: solid;
+  border-width: $global-border-width;
+  border-color: $form-border;
+}
+@mixin hook-form-radio-checked() {
+  border-style: solid;
+  border-width: $global-border-width;
+  border-color: $form-radio-checked-border;
+}
+@mixin hook-form-radio-checked-focus() {
+  border-style: solid;
+  border-width: $global-border-width;
+  border-color: darken($form-radio-checked-border, 10%);
+}
+
+// Heading
+@mixin hook-heading-medium() {
+  @include media-desk($sm) {
+    font-size: $heading-medium-font-size-s;
+  }
+}
+
+@mixin hook-heading-small() {
+  @include media-desk($sm) {
+    font-size: $heading-small-font-size-s;
+  }
+}
+
+// Navbar
+@mixin hook-navbar-nav-item() {
+  font-size: $global-font-size-sm;
+  font-weight: $base-strong-font-weight;
+  @include media-mob($md) {
+    font-size: $base-body-font-size;
+  }
+  @include media-mob($lg) {
+    min-height: 90px;
+    padding: 0 $navbar-nav-item-padding-horizontal-lg;
+  }
+}
+
+@mixin hook-navbar-sticky() {
+  background: $global-secondary-background;
+  box-shadow: $global-medium-box-shadow;
+}
+
+@mixin hook-navbar-misc() {
+  .uk-navbar-right {
+    margin-right: -$global-small-gutter;
+    //@include media-mob($lg) {
+    //  margin-right: -$navbar-nav-item-padding-horizontal-lg;
+    //}
+  }
+  .uk-navbar-left {
+    margin-left: -$global-small-gutter;
+  }
+  .uk-light .uk-navbar-nav > li > a {
+    .uk-navbar-sticky & {
+      color: $inverse-global-color;
+    }
+  }
+  .uk-navbar-container {
+    transition: background-color .5s, box-shadow .5s;
+  }
+}
+
+// Section
+@mixin hook-section() {
+  @include media-mob($sm) {
+    padding-top: $section-padding-vertical-s;
+    padding-bottom: $section-padding-vertical-s;
+  }
+  @include media-mob($md) {
+    padding-top: $section-padding-vertical-m;
+    padding-bottom: $section-padding-vertical-m;
+  }
+}
+
+// Text
+@mixin hook-text-misc() {
+  .uk-text-bolder {
+    font-weight: $base-strong-font-weight;
+  }
+}

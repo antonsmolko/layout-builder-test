@@ -1,0 +1,9 @@
+.tm-advantages {
+    .uk-container {
+        margin-bottom: $global-medium-margin;
+
+        @include media-mob($lg) {
+            margin-bottom: $global-large-margin;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.tm-home-security {
+    &__image-container {
+        @include media-mob($sm) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            padding-top: $global-large-margin + $global-gutter;
+            padding-bottom: $global-large-margin;
+        }
+        @include media-mob($md) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    &__image {
+        height: 230px;
+        @include media-mob($sm) {
+            height: 100%;
+        }
+    }
+
+    &__content {
+        margin-top: $global-medium-margin;
+        @include media-mob($lg) {
+            margin-top: $global-large-margin;
+        }
+    }
+
+    &__right-block {
+        @include media-mob($lg) {
+            padding-top: $global-large-margin;
+            padding-bottom: $global-large-margin;
+        }
+    }
+}

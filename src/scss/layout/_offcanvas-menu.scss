@@ -1,0 +1,7 @@
+.tm-offcanvas-menu {
+    &__link {
+        .uk-active & {
+            color: $accent-color;
+        }
+    }
+}

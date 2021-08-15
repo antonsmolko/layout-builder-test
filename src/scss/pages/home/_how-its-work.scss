@@ -1,0 +1,68 @@
+.tm-home-how-it-works {
+    &__header {
+        @include media-desk($sm) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent !important;
+        }
+        @include media-mob($sm) {
+            padding-bottom: $global-medium-margin;
+        }
+    }
+
+    &__title {
+        white-space: nowrap;
+        @include media-mob($md) {
+            padding-left: $global-gutter + $global-margin;
+        }
+        @include media-mob($lg) {
+            padding-left: $global-gutter * 2;
+        }
+    }
+
+    &__content {
+        @include media-mob($sm) {
+            padding-top: 0;
+        }
+
+        &-container {
+            @include media-desk($sm) {
+                margin-top: $global-large-margin + $global-gutter;
+                padding: 0 $global-small-gutter;
+            }
+        }
+
+        &-text {
+            @include media-mob($md) {
+                width: 385px;
+            }
+            @include media-mob($lg) {
+                width: 450px;
+            }
+        }
+    }
+
+    &__image {
+        height: 240px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        @include media-mob($sm) {
+            height: 260px;
+            margin-top: -($global-large-margin + $global-medium-margin);
+        }
+        @include media-mob($md) {
+            height: 350px;
+        }
+        @include media-mob($lg) {
+            height: 440px;
+            margin-top: -$global-xlarge-margin;
+        }
+        @include media-mob($xl) {
+            height: 520px;
+        }
+    }
+}

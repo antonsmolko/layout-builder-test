@@ -1,0 +1,51 @@
+.tm-home-about {
+    &__first-part {
+        &-text {
+            margin-top: $global-medium-margin;
+            margin-bottom: $global-margin;
+            @include media-mob($sm) {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+
+        &-image {
+            margin-right: -$global-small-gutter;
+        }
+    }
+
+    &__second-part {
+        margin-top: $global-gutter;
+
+        &-text {
+            margin-top: $global-medium-margin;
+            @include media-mob($sm) {
+                margin-top: 0;
+            }
+        }
+
+        &-image {
+            margin-left: -$global-small-gutter;
+            margin-bottom: $global-medium-margin;
+        }
+    }
+
+    &__right-image {
+        height: 320px;
+        margin-top: -$global-medium-margin;
+        @include media-mob($md) {
+            height: 100%;
+            margin-top: -($global-large-margin + $global-margin);
+        }
+    }
+
+    &__left-image {
+        height: 260px;
+        margin-top: $global-medium-margin;
+        margin-bottom: -$global-gutter;
+        @include media-mob($md) {
+            height: 380px;
+            margin-top: ($global-large-margin + $global-margin);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.tm-home-faq {
+    &__accordion {
+        &-item {
+            border-top: 1px solid rgba(59, 53, 48, 0.4);
+            padding: $global-margin 0;
+            &:not(:first-child) {
+                margin-top: 0;
+            }
+            &:last-child {
+                border-bottom: 1px solid rgba(59, 53, 48, 0.4);
+            }
+        }
+
+        &-title {
+            @include media-desk($sm) {
+                span {
+                    font-size: $global-font-size;
+                }
+            }
+        }
+    }
+}

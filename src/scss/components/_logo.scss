@@ -1,0 +1,8 @@
+.tm-logo {
+    img {
+        width: 106px;
+        @include media-mob($sm) {
+            width: 147px;
+        }
+    }
+}

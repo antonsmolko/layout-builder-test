@@ -1,0 +1,9 @@
+@import '../overwrites';
+
+.tm-favorite {
+  &.tm-active {
+    path {
+      fill: $global-primary-background;
+    }
+  }
+}

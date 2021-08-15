@@ -1,0 +1,7 @@
+@import '../overwrites';
+
+.tm-dialog {
+  .uk-modal-dialog {
+    padding: $global-small-gutter 0;
+  }
+}
